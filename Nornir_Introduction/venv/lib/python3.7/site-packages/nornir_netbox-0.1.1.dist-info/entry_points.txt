@@ -1,0 +1,4 @@
+[nornir.plugins.inventory]
+NBInventory=nornir_netbox.plugins.inventory.netbox:NBInventory
+NetBoxInventory2=nornir_netbox.plugins.inventory.netbox:NetBoxInventory2
+

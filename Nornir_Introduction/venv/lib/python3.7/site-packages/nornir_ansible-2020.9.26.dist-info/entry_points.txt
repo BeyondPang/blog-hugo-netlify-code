@@ -1,0 +1,4 @@
+
+    [nornir.plugins.inventory]
+    AnsibleInventory=nornir_ansible.plugins.inventory:AnsibleInventory
+    
