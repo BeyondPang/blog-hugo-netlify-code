@@ -6,7 +6,7 @@ app = Flask(__name__)
 port = 5005
 
 msg = Messenger()
-local_url = 'https://great-eel-95.loca.lt'
+local_url = 'https://wet-ladybug-77.loca.lt'
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
@@ -19,6 +19,7 @@ def index():
             # Notification payload, received from Webex Teams webhook
             data = request.get_json()
 
+         
             # Loop prevention, ignore messages which were posted by bot itself.
             # The bot_id attribute is collected from the Webex Teams API
             # at object instatiation.
@@ -37,10 +38,12 @@ def index():
                 # Collect the message id from the notification, 
                 # so you can fetch the message content
                 message_id = data.get('data').get('id')
+                print(message_id)
 
                 # Get the contents of the received message. 
                 msg.get_message(message_id)
 
+                
                 # If message starts with '/server', relay it to the web server.
                 # If not, just post a confirmation that a message was received.
                 if msg.message_text.startswith('/cards'):
