@@ -4,10 +4,10 @@ from messenger import Messenger
 from aci import get_token, create_tenant
 
 app = Flask(__name__)
-port = 5005
+port = 5006
 
 msg = Messenger()
-local_url = 'https://orange-dolphin-49.loca.lt'
+local_url = 'https://quick-walrus-17.loca.lt'
 #local_url = 'https://fast-forest-55599.herokuapp.com'
 
 @app.route('/', methods=['GET', 'POST'])

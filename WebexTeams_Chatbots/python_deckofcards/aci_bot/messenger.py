@@ -2,7 +2,7 @@ import json
 import requests
 
 # API Key is obtained from the Webex Teams developers website.
-api_key = 'ZDk1MmU3NmEtMzNiYS00ZTZhLWJjY2QtNzgwODE0MjVjMDNkYTdkNWJhNzItZTgy_PF84_1eb65fdf-9643-417f-9974-ad72cae0e10f'
+api_key = 'ZTM4MDQ3MjQtZWM0Ny00ZWE5LWE5NzMtOTI4NzUyNDRiZTU2ZWJlNWZmNTAtZDg2_PF84_1eb65fdf-9643-417f-9974-ad72cae0e10f'
 # Webex Teams messages API endpoint
 base_url = 'https://api.ciscospark.com/v1/'
 
